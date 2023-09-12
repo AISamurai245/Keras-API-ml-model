@@ -1,10 +1,15 @@
-Train a Machine Learning Model using Prebuilt Dataset with Keras
+# Train a Machine Learning Model using Prebuilt Dataset with Keras
+
 This README guide will walk you through the process of training a machine learning model using a prebuilt dataset and the Keras API. In this example, we will use the popular MNIST dataset to build a neural network that classifies images.
-Prerequisites
+
+## Prerequisites
+
 Before you begin, make sure you have TensorFlow installed. You can check the TensorFlow version by running the following code:
 
+```python
 import tensorflow as tf
 print("TensorFlow version:", tf.__version__)
+
 
 Load a Dataset
 We'll start by loading and preparing the MNIST dataset. The pixel values of the images range from 0 through 255. To normalize these values to a range of 0 to 1, divide them by 255.0. This also converts the sample data from integers to floating-point numbers.
